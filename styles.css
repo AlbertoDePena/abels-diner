@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', serif;
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 920px;
+    padding: 20px 40px;
+    /*background-color: rgb(255, 255, 255);*/
+    background-color: #ecf0f1;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+header {
+    text-align: center;
+    margin: 0 auto;
+}
+
+header .logo p {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+header .contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+header .contact-info a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+nav {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 2px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main {
+    margin: 20px 0;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+main div.welcome {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+}
+
+main div.welcome p {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+main div.daily-items {
+    display: flex;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.daily-items .lunch-specials {
+    padding: 0;
+}
+
+.daily-items .lunch-specials div {
+    padding: 5px 20px 0 0;
+}
+
+.daily-items .soup-of-the-day {
+    padding: 0;
+}
+
+.daily-items .soup-of-the-day div {
+    padding: 5px 0 0 20px;
+}
+
+.daily-items .title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #254337;
+}
+
+.daily-items span {
+    font-weight: bold;
+    color: #254337;
+}
+
+/**/
+
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.row {
+    display: flex;
+    margin-top: 20px;
+}
+
+.row .col {
+    flex: 1;
+}
+
+/* Accordion styles */
+
+.tabs {
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.tab {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+
+.tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: rgb(0, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+    /* Icon */
+}
+
+.tab-label::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s;
+}
+
+.tab-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: rgb(0, 0, 0);
+    background: white;
+    transition: all 0.35s;
+}
+
+input:checked+.tab-label::after {
+    transform: rotate(90deg);
+}
+
+input:checked~.tab-content {
+    max-height: 100vh;
+    padding: 1em;
+}
