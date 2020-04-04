@@ -13,7 +13,6 @@ body {
     margin: 0 auto;
     max-width: 920px;
     padding: 20px 40px;
-    /*background-color: rgb(255, 255, 255);*/
     background-color: #ecf0f1;
     border-left: 1px solid lightgray;
     border-right: 1px solid lightgray;
@@ -55,7 +54,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: rgb(255, 255, 255);
+    color: #ecf0f1;
     font-weight: bold;
     text-decoration: none;
 }
@@ -79,7 +78,7 @@ main div.welcome {
 }
 
 main div.welcome p {
-    color: rgb(255, 255, 255);
+    color: #ecf0f1;
     font-size: 18px;
     margin: 20px 0;
     font-weight: bold;
@@ -146,7 +145,7 @@ input {
 
 .tab {
     width: 100%;
-    color: white;
+    color: #ecf0f1;
     overflow: hidden;
 }
 
@@ -174,6 +173,7 @@ input {
     color: rgb(0, 0, 0);
     background: white;
     transition: all 0.35s;
+    overflow-y: auto;
 }
 
 input:checked+.tab-label::after {
@@ -183,4 +183,14 @@ input:checked+.tab-label::after {
 input:checked~.tab-content {
     max-height: 100vh;
     padding: 1em;
+}
+
+.menu-description {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.menu-item {
+    padding-top: 15px;
 }
