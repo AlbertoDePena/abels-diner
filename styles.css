@@ -59,6 +59,15 @@ nav ul li a {
     text-decoration: none;
 }
 
+.social-media-icons a {
+    text-decoration: none;
+}
+
+.social-media-icons img {
+    width: 32px;
+    height: 32px;
+}
+
 main {
     margin: 20px 0;
 }
