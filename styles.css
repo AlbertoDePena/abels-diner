@@ -203,6 +203,16 @@ input:checked~.tab-content {
     padding-top: 15px;
 }
 
+.online-ordering {
+    padding: 8px;
+    background-color: red;
+    color: #ecf0f1;
+    border: solid 1px black;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 900px) {
     .contact-info {
         flex-direction: column;
