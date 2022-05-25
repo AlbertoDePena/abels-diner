@@ -203,8 +203,16 @@ input:checked~.tab-content {
     padding-top: 15px;
 }
 
+.online-ordering-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .online-ordering {
     padding: 8px;
+    margin: 2px;
+    width: 240px;
     background-color: red;
     color: #ecf0f1;
     border: solid 1px black;
